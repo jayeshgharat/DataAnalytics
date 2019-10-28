@@ -1,0 +1,9 @@
+Output- 1(Jayesh):
+
+Output of DecisionTreeClassifier is :  ['female']
+Output of KNeighborsClassifier is :    ['male']
+Output of LogisticRegression is :      ['male']
+Output of SGDClassifier is :           ['male']
+Output of GaussianNB is :              ['female']
+Output of RandomForestClassifier is :  ['male']
+Output of SVC is :                     ['male']
