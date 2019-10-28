@@ -6,6 +6,7 @@ from sklearn.linear_model import SGDClassifier
 from sklearn.naive_bayes import GaussianNB
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.svm import SVC
+from sklearn.metrics import accuracy_score
 
 #[height, weight, shoe size]
 X = [[181,80,44],[177,70,44],[181,60,44],[181,80,44],[100,80,44],[181,20,44],[160,80,44]]
