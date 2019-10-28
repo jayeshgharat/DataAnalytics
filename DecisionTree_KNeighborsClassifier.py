@@ -5,6 +5,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.linear_model import SGDClassifier
 from sklearn.naive_bayes import GaussianNB
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.svm import SVC
 
 #[height, weight, shoe size]
 X = [[181,80,44],[177,70,44],[181,60,44],[181,80,44],[100,80,44],[181,20,44],[160,80,44]]
@@ -45,3 +46,9 @@ RFC = RandomForestClassifier(n_estimators=70, oob_score=True, n_jobs=-1, random_
 RFC = RFC.fit(X,Y)
 predict_RFC = RFC.predict([[190,170,43]])
 print ("Output of RandomForestClassifier is : ",predict_RFC)
+
+#SVM = SVC()
+SVM = SVC(kernel="linear", C=0.025, random_state=101)
+SVM = SVM.fit(X,Y)
+predict_SVM = SVM.predict([[190,170,43]])
+print ("Output of SVC is : ",predict_SVM)
