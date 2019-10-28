@@ -1,9 +1,34 @@
 Output- 1(Jayesh):
 
-Output of DecisionTreeClassifier is :  ['female']
-Output of KNeighborsClassifier is :    ['male']
-Output of LogisticRegression is :      ['male']
-Output of SGDClassifier is :           ['male']
-Output of GaussianNB is :              ['female']
-Output of RandomForestClassifier is :  ['male']
-Output of SVC is :                     ['male']
+X:[height, weight, shoe size]
+ [[181, 80, 44], [177, 70, 44], [181, 60, 44], [181, 80, 44], [100, 80, 44], [181, 20, 44], [160, 80, 44]]
+Y:[height, weight, shoe size]
+ ['male', 'female', 'male', 'female', 'male', 'female', 'male']
+
+Output of DecisionTreeClassifier is :  ['female' 'female' 'male' 'female' 'male' 'female' 'male']
+	---Accuracy for DecisionTreeClassifier: 85.71428571428571
+
+Output of KNeighborsClassifier is :  ['male' 'male' 'male' 'male' 'male' 'female' 'male']
+	---Accuracy for KNeighborsClassifier: 71.42857142857143
+
+Output of LogisticRegression is :  ['male' 'male' 'female' 'male' 'male' 'female' 'male']
+	---Accuracy for LogisticRegression: 57.14285714285714
+
+Output of SGDClassifier is :  ['female' 'female' 'female' 'female' 'male' 'female' 'male']
+	---Accuracy for SGDClassifier: 71.42857142857143
+
+Output of Perceptron is :  ['male' 'male' 'male' 'male' 'male' 'male' 'male']
+	---Accuracy for Perceptron: 57.14285714285714
+
+Output of GaussianNB is :  ['female' 'female' 'female' 'female' 'male' 'female' 'male']
+	---Accuracy for GaussianNB: 71.42857142857143
+
+Output of RandomForestClassifier is :  ['male' 'male' 'male' 'male' 'male' 'male' 'male']
+	---Accuracy for RandomForestClassifier: 57.14285714285714
+
+Output of SVC is :  ['male' 'male' 'male' 'male' 'male' 'female' 'male']
+	---Accuracy for SVC: 71.42857142857143
+
+-------------------------------------------------------
+Best gender classifier is DTree
+[Finished in 2.7s]
