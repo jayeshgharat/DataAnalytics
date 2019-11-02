@@ -30,3 +30,8 @@ for tweet in public_tweets:
     analysis = TextBlob(tweet.text)
     print(analysis.sentiment)
     print("")
+
+
+ #Save the tweets in csv
+	with open('%s_tweets.csv' % tweets, 'wb') as this_tweets_file:
+		this_tweets_file.write('tweet,sentiment_label\n')
