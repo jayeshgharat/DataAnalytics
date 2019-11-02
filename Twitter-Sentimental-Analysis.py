@@ -1,5 +1,10 @@
 import tweepy
 from textblob import TextBlob
+import os
+
+# setting global variables
+
+
 
 # Step 1 - Authenticate
 consumer_key= '4KWwsyBMdDvSuu2siZSXHQkGE'
@@ -33,5 +38,13 @@ for tweet in public_tweets:
 
 
  #Save the tweets in csv
-	with open('%s_tweets.csv' % tweets, 'wb') as this_tweets_file:
-		this_tweets_file.write('tweet,sentiment_label\n')
+	#with open('%s_tweets.csv' % tweets, 'wb') as this_tweets_file:
+		#this_tweets_file.write('tweet,sentiment_label\n')
+
+		    
+            # recording the sentiment score
+            #sentiment_score.insert(0, analysis.sentiment.polarity)
+            # opening csv file to write the input along with tag and score
+            with open("tweet_sheet.csv", "a") as sheet:
+                W = csv.writer(sheet, delimiter=',')
+                W.writerow([tweet.text,analysis.sentiment])
